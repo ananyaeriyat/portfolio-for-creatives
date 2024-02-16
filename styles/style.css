@@ -10,9 +10,7 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inconsolata:wght@200..900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@700&display=swap');
 
 
 /*
@@ -72,39 +70,39 @@ html {
 /* Design variables refer to CSS variables that store specific design elements, such as colors and typography, which can be utilized throughout a website. Instead of individually modifying each CSS element, designers can quickly make changes by using design variables. Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inconsolata", sans-serif;
-  --heading-typeface: 'Amatic', serif;
-  --project-title-typeface: 'Amatic', serif;
+  --body-typeface: "Abel", sans-serif;
+  --heading-typeface: "Amatic SC", sans-serif;
+  --project-title-typeface: "Amatic SC", sans-serif;
   --background-color: #f3f3f3;
   --background-color-about: #f5f5f5;
   --background-color-footer: #f5f5f5;    
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255,0.6);
-  --h1-color: #270e6b;
-  --h2-color: #270e6b;
-  --h3-color: #270e6b;
-  --h4-color: #270e6b;
-  --h5-color: #270e6b;
-  --h6-color: #270e6b;
-  --primary-text-color: #222;
+  --h1-color: #0E060A;
+  --h2-color: #0E060A;
+  --h3-color: #0E060A;
+  --h4-color: #0E060A;
+  --h5-color: #0E060A;
+  --h6-color: #0E060A;
+  --primary-text-color: #0E060A;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #5200ff;
+  --accent-color: #26B0BA;
+  --overlay-color: #26B0BA;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
+  --hyperlink-color: #26B0BA;
   --hyperlink-alternate-color: rgb(243, 67, 97);
   --hover-color: #111;
-  --visited-color: #5200ff;
+  --visited-color: #26B0BA;
   --project-title-color: #14062c;
-  --project-sidebar-background-color: rgb(194, 221, 248);
-  --project-sidebar-text-color: white;
+  --project-sidebar-background-color: transparent;
+  --project-sidebar-text-color: #121212;
   --heart-color: darkred;
-  --holding-page-footer-color: #8282db;
+  --holding-page-footer-color: #FC6B36;
   --text-selection-background-color: #62b6cf;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
-1
+
 
 body {
   font-family: var(--body-typeface);
@@ -153,7 +151,7 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  font-family: var(--heading-typeface);
+  font-family: var(--body-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
@@ -327,7 +325,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
+  width:7rem;
 }
 
 .hero-headline-wrapper {
@@ -555,16 +553,12 @@ a:active {
 
 .project-image {
   width: 100%;
-  min-height: 50vh;
-  /* min-height should be deleted if you want to remove space between project images on project pages */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.large-emoji-placeholder {
-  font-size: 12rem; /* This is for making the placeholder emojis large and should be deleted */
-}
+
 
 .text-section {
   width: 100%;
@@ -843,7 +837,7 @@ a.sub-navigation-link:hover {
   }
 
   .logo {
-    width: 5rem;
+    width: 12rem;
   }
 
   .hero {
