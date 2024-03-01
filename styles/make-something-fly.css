@@ -4,7 +4,7 @@
 
 .flier > * {
 /* Adjust animation duration to change the element’s speed */
-        animation: fly 120s linear infinite;
+        animation: fly 150s linear infinite;
         pointer-events: none !important;
 	top: 0;
 	left: 0;
@@ -12,7 +12,7 @@
 	position: fixed;
 	animation-delay: 1s;
 	z-index: 999999;
-    width: 5rem;
+    width: 25rem;
 }
 
  /* Keyframe values control where the element will begin

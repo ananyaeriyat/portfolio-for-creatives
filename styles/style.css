@@ -78,35 +78,35 @@ html {
   --background-color-footer: #f5f5f5;    
   --alt-background-color: #000000;
   --background-color-holding-page: rgba(82, 0, 255,0.6);
-  --h1-color: #0E060A;
+  --h1-color: #09060e;
   --h2-color: #0E060A;
   --h3-color: #0E060A;
   --h4-color: #0E060A;
   --h5-color: #0E060A;
   --h6-color: #0E060A;
-  --primary-text-color: #0E060A;
+  --primary-text-color: #2c00cc;
   --holding-page-title-color: #ebedf0;
-  --accent-color: #26B0BA;
-  --overlay-color: #26B0BA;
+  --accent-color: #2f59ff;
+  --overlay-color: #2f59ff;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
-  --hyperlink-color: #26B0BA;
+  --hyperlink-color: #2f59ff;
   --hyperlink-alternate-color: rgb(243, 67, 97);
-  --hover-color: #111;
-  --visited-color: #26B0BA;
+  --hover-color: rgb(235, 0, 51);
+  --visited-color: #2f59ff;
   --project-title-color: #14062c;
   --project-sidebar-background-color: transparent;
   --project-sidebar-text-color: #121212;
   --heart-color: darkred;
   --holding-page-footer-color: #FC6B36;
-  --text-selection-background-color: #62b6cf;
+  --text-selection-background-color: #a9acd8;
   --stroke-shadow-color: rgba(0, 0, 0, 0.4);
 }
 
 
 body {
   font-family: var(--body-typeface);
-  color: var(--primary-text-color);
+  color: var(--accent-color);
   background: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -157,7 +157,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.325rem;
+  font-size:4.25rem;
   margin-bottom: 1rem;
   line-height: 1.3;
   color: var(--h3-color);
@@ -325,7 +325,7 @@ a:active {
 }
 
 .logo {
-  width:7rem;
+  width:10rem;
 }
 
 .hero-headline-wrapper {
@@ -382,7 +382,7 @@ a:active {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
   grid-gap: 1rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -410,7 +410,7 @@ a:active {
   align-items: center;
   flex-direction: column;
   padding: 1em;
-  background-color: var(--overlay-color);
+  background-color: var(--background-color-holding-page);
   transition: opacity .3s, visibility .3s;
 }
 
@@ -474,30 +474,30 @@ a:active {
 
 .global-footer {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows:3fr;
   grid-gap: 3rem;
   min-height: 100vh;
-  background: var(--background-color-footer);
+  background: var(--text-selection-background-color);
   padding: 1rem;
 }
 
 .footer-item-1 {
+  grid-row: 1 / 3;
   grid-column: 1 / 2;
-  grid-row: 1 / 2;
 }
 
 .footer-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 
 .footer-item-3 {
-  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   grid-row: 3 / 4;
 }
 
 .footer-item-4 {
-  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   grid-row: 4 / 5;
 }
 
