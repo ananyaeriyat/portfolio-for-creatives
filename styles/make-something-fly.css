@@ -22,7 +22,7 @@
 
 
 .ghost {
-    animation: fly 60s linear infinite;
+    animation: fly 300s linear infinite;
     top: 0;
     left: 0;
     position: fixed;
