@@ -204,6 +204,7 @@ em {
   width: 50%;
   font-size: 3.5rem;
   line-height: 1.2;
+  margin-bottom: 10rem;
 }
 
 .large {
@@ -318,8 +319,8 @@ a.hero-footer-navigation-item:hover {
 .project-description {
   font-size: 1.625rem;
   line-height: 1.2;
-  margin-bottom: 1rem
-  margin-right: 1rem;;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
 }
 
 /* Hero 
