@@ -42,15 +42,15 @@
   }
 
   25% {
-    transform: translate(-200%, 50vh) scale(1.75) rotateZ(0deg);
+    transform: translate(200%, 50vh) scale(1.75) rotateZ(180deg);
   }
 
   37.5% {
-    transform: translate(-200%, -120%) rotateZ(0deg);
+    transform: translate(200%, -120%) rotateZ(0deg);
   }
 
   50% {
-    transform: translate(100vw, 50vh) rotateZ(0deg);
+    transform: translate(100vw, 50vh) rotateZ(180deg);
     opacity: 0.75;
   }
 
