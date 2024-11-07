@@ -216,6 +216,8 @@ em {
   align-content: center;
 }
 
+
+
 .large{
   font-size: 4rem;
   display: block;
@@ -261,7 +263,7 @@ a.hero-footer-navigation-item{
 }
 
 a.hero-footer-navigation-item:hover{
-  color: #175241;
+  color: #68dd7bd3;
 }
 
 a:visited {
@@ -513,7 +515,7 @@ a:active {
 .about-item-1 {
   grid-column: 1 /2;
   grid-row: 2/ 3;
-  font-size: 10rem;
+ 
 }
 
 .about-item-2 {
@@ -638,10 +640,10 @@ a:active {
 
 
 .about-image{
-  width: 250%;
+  width: 100%;
   margin-top: 5rem;
   margin-right: 15srem;
-  margin-left: -6rem;
+  margin-left: -2rem;
 }
 /* Project Page 
 
@@ -835,17 +837,21 @@ a:active {
   place-items: center;
 }
 
-.error-page-wrapper {
-}
+
 
 .error-page-inner-container {
   text-align: center;
 }
 
 .error-page-title {
-  color: var(--accent-color);
+  color: var(--h1-color);
 }
+.error-sub-head{
+  color: red;
+  font-size: 2rem;
 
+
+}
 /*
 
 ██████  ██       █████  ██    ██ 
@@ -1056,7 +1062,7 @@ a.sub-navigation-link:hover {
   p, .project-description, .footer-nav-item, .award-item { font-size: 1.25rem; }
 
   /* Adjust hero headline and title */
-  .logo { width: 8rem;
+  .logo { width: 10rem;
   }
   .hero-headline { padding-left: 4rem; font-size: 2rem; }
   .project-title { font-size: 2.5rem; }
@@ -1068,7 +1074,7 @@ a.sub-navigation-link:hover {
   .hero-footer-navigation { flex-direction: row; padding: 0.5rem; }
 
   /* Social icon size */
-  .social-icons { margin-right: 18rem; font-size: 4rem; }
+  .social-icons { margin-right: 45rem; font-size: 5rem; }
 }
 
 /* Small devices (phones, 600px and up) */
@@ -1122,6 +1128,8 @@ a.sub-navigation-link:hover {
   margin-top: 1rem; /* Add some space between text and image */
   max-width: 60%; /* Adjust size for better mobile fit */
 }
+
+
 
 
 /* Extra small devices (phones, 480px and up) */
