@@ -84,7 +84,7 @@ html {
   --h5-color: #0e060a;
   --h6-color: #0e060a;
   --primary-text-color: #000e0a;
-  --holding-page-title-color: #fafffc;
+  --holding-page-title-color: #000000;
   --accent-color: #fff5f5;
   --overlay-color: #371d97;
   --overlay-title-color: #ffffff;
@@ -209,11 +209,11 @@ em {
 
 .hero-headline {
   color: var(--h1-color);
-  padding-left: 8rem;
+  padding-left: 4rem;
   font-size:3.5rem;
   line-height: 1.2;
   margin-top: 10;
-  align-content: center;
+  align-content: left;
 }
 
 
@@ -784,7 +784,7 @@ a:active {
   width: 100%;
   min-height: 100vh;
   /* Delete the following if you do not want a grainy gradient background on the holding page */
-  background: #3f1068;
+  background: white;
   /* For more on grainy gradients see https://grainy-gradients.vercel.app/ */
 }
 
@@ -1037,6 +1037,10 @@ a.sub-navigation-link:hover {
   margin-bottom: 0.5rem; /* Space between items */
 }
 
+.logo{
+  width:8rem;
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .grid {
@@ -1145,7 +1149,7 @@ a.sub-navigation-link:hover {
   .logo {
     width: 4rem;
   }
-  .hero-headline { padding-left: 1rem; font-size: 1.5rem; }
+  
   .project-title { font-size: 1.75rem; }
 
   /* Adjust hero footer and navigation */
@@ -1331,10 +1335,10 @@ a.sub-navigation-link:hover {
 @media (min-width: 1200px) {
 }
 .large{
-  font-size: 4rem;;
+  font-size: 5rem;;
 }
 .hero-headline{
-  font-size: 2rem;;
+  font-size: 2.5rem;;
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */

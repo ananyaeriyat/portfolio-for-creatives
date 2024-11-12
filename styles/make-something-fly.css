@@ -1,70 +1,69 @@
+/* Set up flier container */
 .flier {
   pointer-events: none;
 }
 
 .flier > * {
-  animation: fly 30s linear infinite; /* Adjust duration for faster movement */
+  animation: fly 15s linear infinite; /* Adjust duration for faster movement */
   pointer-events: none !important;
+  position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(120%) translateY(120%);
-  animation-delay: 0s; /* Adjust delay as needed */
   z-index: 999999;
-  position: fixed;
-  width: 15rem; /* Reduce size */
+  width: 20rem; /* Adjust size as needed */
 }
 
 /* Define the ghost styling */
 .ghost {
-  animation: fly 10s linear infinite; /* Adjust duration for faster movement */
+  animation: fly 10s linear infinite; /* Adjust duration */
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
   z-index: 999;
   pointer-events: none;
-  font-size: 3rem; /* Make ghost smaller */
-  display: block; /* Ensure the ghost is visible */
-  width: 3rem; /* Smaller size */
+  font-size: 3rem;
+  display: block;
+  width: 3rem; /* Adjust size */
 }
 
-/* Keyframe animation with horizontal flip */
+/* Keyframe animation for flying ghost */
 @keyframes fly {
   0% {
-    transform: translate(0vw, 0vh) scaleX(-1); /* Facing right */
-    opacity: 0.95;
+    transform: translate(0vw, -10vh) scaleX(-1); /* Start slightly above top */
+    opacity: 1;
   }
 
   12.5% {
-    transform: translate(25vw, 20vh) scaleX(-1); /* Moving right */
+    transform: translate(25vw, 10vh) scaleX(-1);
   }
 
   25% {
-    transform: translate(50vw, 40vh) scaleX(-1); /* Moving right */
+    transform: translate(50vw, 30vh) scaleX(-1);
   }
 
   37.5% {
-    transform: translate(75vw, 60vh) scaleX(-1); /* Moving right */
+    transform: translate(75vw, 50vh) scaleX(-1);
   }
 
   50% {
-    transform: translate(100vw, 80vh) scaleX(1); /* Reaches far right, now faces left */
+    transform: translate(100vw, 70vh) scaleX(1); /* Flip direction */
     opacity: 0.75;
   }
 
   62.5% {
-    transform: translate(75vw, 100vh) scaleX(-1); /* Moving left */
+    transform: translate(75vw, 90vh) scaleX(-1);
   }
 
   75% {
-    transform: translate(50vw, 120vh) scaleX(-1); /* Moving left */
+    transform: translate(50vw, 110vh) scaleX(-1);
   }
 
   87.5% {
-    transform: translate(25vw, 140vh) scaleX(-1); /* Moving left */
+    transform: translate(25vw, 130vh) scaleX(-1);
   }
 
   100% {
-    transform: translate(0vw, 160vh) scaleX(1); /* Reaches far left, now faces right */
+    transform: translate(0vw, 150vh) scaleX(1); /* Off screen at bottom */
     opacity: 1;
   }
 }
