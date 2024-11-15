@@ -85,7 +85,7 @@ html {
   --h6-color: #0e060a;
   --primary-text-color: #000e0a;
   --holding-page-title-color: #000000;
-  --accent-color: #fff5f5;
+  --accent-color: #9227ac;
   --overlay-color: #371d97;
   --overlay-title-color: #ffffff;
   --overlay-description-color: #ffffff;
@@ -654,6 +654,13 @@ a:active {
 ██      ██   ██  ██████   █████  ███████  ██████    ██        ██      ██   ██  ██████  ███████ 
                                                                                                
 */
+
+
+.project-image-1080{
+  max-width: 50%;
+  margin-bottom: 2rem;
+  
+}
 
 .arrow{
   color:#175241
