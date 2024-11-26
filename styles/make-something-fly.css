@@ -21,9 +21,9 @@
   left: 0;
   z-index: 999;
   pointer-events: none;
-  font-size: 3rem;
+  font-size: 1rem;
   display: block;
-  width: 3rem; /* Adjust size */
+  width: 2rem; /* Adjust size */
 }
 
 /* Keyframe animation for flying ghost */
@@ -59,11 +59,11 @@
   }
 
   87.5% {
-    transform: translate(25vw, 130vh) scaleX(-1);
+    transform: translate(25vw, 120vh) scaleX(-1);
   }
 
   100% {
-    transform: translate(0vw, 150vh) scaleX(1); /* Off screen at bottom */
+    transform: translate(0vw, 140vh) scaleX(1); /* Off screen at bottom */
     opacity: 1;
   }
 }

@@ -508,7 +508,7 @@ a:active {
 .image-container {
  grid-column: 2 / 2;
  grid-row: 1 / 2;
- al
+ 
   
 }
 
@@ -523,14 +523,26 @@ a:active {
                                            
 */
 
+/*.about {
+  display: flex;
+  flex: 1;
+  background: var(--background-color-about);
+  padding: 1rem;
+}*/
+.parent {
+  display: flex;
+}
 .about {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   background: var(--background-color-about);
   padding: 1rem;
-  flex: 1;
+  
 }
+
+
+
 
 .about-item-1 {
   grid-column: 1 /2;
@@ -541,6 +553,7 @@ a:active {
 .about-item-2 {
   grid-column: 1 / 2;
   grid-row: 2/ 3;
+  margin-left: 3rem
 }
 
 .about-item-3 {
@@ -647,7 +660,7 @@ a:active {
   flex-direction:row;
   justify-content: space-between;
   font-size: 2.5rem;
-  padding-right: 20vh;
+  padding-right: 7vh;
 }
 
 
@@ -661,9 +674,8 @@ a:active {
 
 .about-image{
   width: 100%;
-  margin-top: 5rem;
-  margin-right: 15srem;
-  margin-left: -2rem;
+  margin-right: 10rem;
+
 }
 /* Project Page 
 
@@ -1016,6 +1028,33 @@ a.sub-navigation-link:hover {
 ██  ██  ██ ██      ██   ██ ██ ██   ██     ██ ▄▄ ██ ██    ██ ██      ██   ██ ██ ██           ██ 
 ██      ██ ███████ ██████  ██ ██   ██      ██████   ██████  ███████ ██   ██ ██ ███████ ███████ 
 
+
+
+/* Default layout for larger screens */
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-image {
+  max-width: 100%; /* Adjust based on design */
+  height: auto;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .about-image {
+    max-width: 50%; /* Full width on small screens */
+  }
+}
+
+
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 300px) {
@@ -1027,13 +1066,18 @@ a.sub-navigation-link:hover {
   font-size: 3rem;;
 }
 .hero-headline{
-  font-size: 1.5rem;;
+  font-size: 1.5rem;
+}
+
+/* medium devices (tablets, 1000px and up) */
+
+
+.about-image{
+  width:100%;
 }
 
 
 
-
-}
 
 /* Medium devices (tablets, 768px and up) */
 
@@ -1092,6 +1136,8 @@ a.sub-navigation-link:hover {
 .logo{
   width:8rem;
 }
+
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
