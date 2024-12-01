@@ -258,7 +258,7 @@ a.custom-navigation:hover{
 
 a.hero-footer-navigation-item{
   font-size: 1.25rem;
-  color: var(--background-color);
+  color: var(--heart-color);
   
 }
 
@@ -408,8 +408,9 @@ a:active {
 }
 
 .hero-footer {
-  background: #175241;
-  padding: 1rem;
+  
+  padding: 0.5rem;
+  
 }
 
 .hero-footer-navigation {
@@ -421,7 +422,7 @@ a:active {
 }
 
 .hero-footer-navigation-item {
-  color: #fff;
+  color: var(--heart-color);
   text-decoration: none;
   font-size: 1rem;
 }
@@ -591,7 +592,12 @@ a:active {
 
 .tagline-about{
   font-size: 1.75rem;
+  font-family: var(--heading-typeface);
 }
+
+.about-description{
+  font-family: var(--body-typeface);
+} 
 
 /* Global Footer
 

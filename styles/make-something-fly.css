@@ -10,12 +10,13 @@
   top: 0;
   left: 0;
   z-index: 999999;
-  width: 20rem; /* Adjust size as needed */
+  width: 15rem; /* Adjust size as needed */
 }
 
 /* Define the ghost styling */
 .ghost {
   animation: fly 10s linear infinite; /* Adjust duration */
+  animation-delay: 10s;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,41 +30,41 @@
 /* Keyframe animation for flying ghost */
 @keyframes fly {
   0% {
-    transform: translate(0vw, -10vh) scaleX(-1); /* Start slightly above top */
+    transform: translate(0vw, -10vh); /* Start slightly above top */
     opacity: 1;
   }
 
   12.5% {
-    transform: translate(25vw, 10vh) scaleX(-1);
+    transform: translate(20vw, 10vh); /* Move right */
   }
 
   25% {
-    transform: translate(50vw, 30vh) scaleX(-1);
+    transform: translate(40vw, 30vh); /* Move further right */
   }
 
   37.5% {
-    transform: translate(75vw, 50vh) scaleX(-1);
+    transform: translate(60vw, 50vh); /* Move right */
   }
 
   50% {
-    transform: translate(100vw, 70vh) scaleX(1); /* Flip direction */
+    transform: translate(80vw, 70vh); /* Move even further right */
     opacity: 0.75;
   }
 
   62.5% {
-    transform: translate(75vw, 90vh) scaleX(-1);
+    transform: translate(60vw, 90vh); /* Move back left */
   }
 
   75% {
-    transform: translate(50vw, 110vh) scaleX(-1);
+    transform: translate(40vw, 110vh); /* Move left */
   }
 
   87.5% {
-    transform: translate(25vw, 120vh) scaleX(-1);
+    transform: translate(20vw, 130vh); /* Move back left */
   }
 
   100% {
-    transform: translate(0vw, 140vh) scaleX(1); /* Off screen at bottom */
+    transform: translate(0vw, 150vh); /* Off screen at bottom */
     opacity: 1;
   }
 }
