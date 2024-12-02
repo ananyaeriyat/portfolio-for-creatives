@@ -657,7 +657,7 @@ a:active {
   display: flex;
   flex-direction:row;
   justify-content: space-between;
-  margin-right: 50rem;
+  margin-right: 20rem;
   font-size: 5rem;
 }
 
@@ -1182,7 +1182,7 @@ a.sub-navigation-link:hover {
   .hero-footer-navigation { flex-direction: row; padding: 0.5rem; }
 
   /* Social icon size */
-  .social-icons { margin-right: 45rem; font-size: 5rem; }
+  .social-icons { margin-right: 30rem; font-size: 5rem; }
 }
 
 /* Small devices (phones, 600px and up) */
