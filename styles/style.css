@@ -410,6 +410,7 @@ a:active {
 .hero-footer {
   
   padding: 0.5rem;
+  background-color: #000000;
   
 }
 
@@ -1141,6 +1142,7 @@ a.sub-navigation-link:hover {
 
 .logo{
   width:8rem;
+  
 }
 
 
