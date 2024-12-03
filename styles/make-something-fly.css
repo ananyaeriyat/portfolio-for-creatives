@@ -44,3 +44,54 @@
     opacity: 1;
   }
 }
+
+/* Set up flier container */
+.flier {
+  pointer-events: none;
+}
+
+.flier > * {
+  animation: fly 15s linear infinite; /* Adjust duration for faster movement */
+  pointer-events: none !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 15rem; /* Adjust size as needed */
+  transform: scaleX(-1); /* Flips the flier horizontally */
+}
+
+
+/* Define the ghost styling */
+.usb {
+  animation: fly 10s linear infinite; /* Adjust duration */
+  animation-delay: 10s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  pointer-events: none;
+  font-size: 1rem;
+  display: block;
+  width: 2rem; /* Adjust size */
+}
+
+/* Keyframe animation for flying ghost */
+@keyframes fly {
+  0% {
+    transform: translate(0vw, -20vh) scaleX(-1); /* Start flipped */
+    opacity: 1;
+  }
+  50% {
+    transform: translate(80vw, 70vh) scaleX(-1); /* Normal orientation */
+    opacity: 0.75;
+  }
+  100% {
+    transform: translate(0vw, 150vh) scaleX(1); /* Flipped again */
+    opacity: 1;
+  }
+}
+
+
+
+
