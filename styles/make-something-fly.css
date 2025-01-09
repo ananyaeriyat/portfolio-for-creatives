@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   z-index: 999999;
-  width: 15rem; /* Adjust size as needed */
+  width: 5rem; /* Adjust size as needed */
   transform: scaleX(-1); /* Flips the flier horizontally */
 }
 
